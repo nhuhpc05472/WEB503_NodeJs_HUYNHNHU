@@ -1,0 +1,35 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch",
+    "start": "node index.js"
+  },
+  "watch": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhuhpc05472/WEB503_NodeJs_HUYNHNHU.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "nhuhpc05472",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhuhpc05472/WEB503_NodeJs_HUYNHNHU/issues"
+  },
+  "homepage": "https://github.com/nhuhpc05472/WEB503_NodeJs_HUYNHNHU#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "mysql": "^2.18.1",
+    "npm-watch": "^0.11.0"
+  }
+}
