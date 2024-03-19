@@ -1,0 +1,13 @@
+<%- include('./layouts/header.ejs') %>
+<body>
+    
+    <main style="text-align: center;" >
+        <h1 style="color:brown;">Chào Mừng, bạn ghé thăm website</h1>
+        <% if(kindOfDay == 'Chủ nhật' || kindOfDay == 'Thứ bảy') { %> <h2>Hôm nay là cuối tuần</h2>
+        <% } else { %>
+        <h2>Hôm nay là <%= kindOfDay %></h2>
+        <% } %>
+        </main>
+</body>
+</html>
+<%- include('./layouts/footer.ejs') %>

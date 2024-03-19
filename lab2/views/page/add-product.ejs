@@ -1,0 +1,48 @@
+<%- include('../layouts/header.ejs') %>
+    <div class="container">
+      <h1 style="color: gray; ">Thêm Sản Phẩm</h1>
+      <form action="/add" method="POST" enctype="multipart/form-data">
+        <label for="productName">ID:</label><br />
+        <input
+          type="text"
+          id="idProduct"
+          name="idProduct"
+          required
+        /><br /><br />
+        <label for="productName">Tên Sản Phẩm:</label><br />
+        <input
+          type="text"
+          id="productName"
+          name="productName"
+          required
+        /><br /><br />
+        <label for="price">Giá:</label><br />
+        <input type="number" id="price" name="price" required /><br /><br />
+
+        <label for="image">Hình Ảnh:</label><br />
+        <input
+          type="file"
+          id="image"
+          name="image"
+          required
+          accept="image/*"
+        /><br /><br />
+
+        <label for="category">Danh Mục: </label>
+        <input type="text" id="category" name="category" required /><br /><br />
+
+        <br />
+
+        <label for="description">Mô Tả:</label><br />
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          required
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Thêm </button>
+      </form>
+    </div>
+<%- include('../layouts/footer.ejs') %>

@@ -1,0 +1,55 @@
+/* CSS for Header */
+.site-header {
+    width: 100%;
+    z-index: 1000; /* to make sure it's above other elements */
+  }
+  
+  .navbar {
+    padding: 10px 20px; /* Padding for navbar */
+    background-color: #ffffff; /* Background color of navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333; /* Color of navbar brand */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333; /* Color of navbar links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Color of navbar links on hover */
+  }
+  
+  .nav-link.active {
+    color: #007bff; /* Color of active navbar link */
+  }
+  
+  /* Offcanvas */
+  .offcanvas-header {
+    border-bottom: none; /* Remove bottom border */
+  }
+  
+  .btn-close-black {
+    color: #000000; /* Close button color */
+  }
+  
+  .offcanvas-body {
+    padding: 20px; /* Padding for offcanvas body */
+  }
+  
+  @media (max-width: 991.98px) {
+    /* Media query for smaller screens */
+    .navbar-nav {
+      flex-direction: column; /* Stack navbar links vertically */
+      text-align: center; /* Center-align navbar links */
+    }
+  }
+  
